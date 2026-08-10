@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: burlywood;
+    min-height: 2000px;
+    /* For scrolling demonstration */
+}
+
+/* 1. FIXED NAVIGATION */
+.navbar {
+    <nav class="navbar"><span>My Portfolio</span><div class="nav-links"><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></div></nav>
+}
+
+.nav-links {
+    /* Use inline-block to display links horizontally */
+}
+
+.nav-links a {
+    /* Display as inline-block */
+    /* Add padding and text decoration */
+}
+
+/* 2. CARD CONTAINER */
+.card-container {
+    /* Center the container */
+    max-width: 500px;
+    margin: 80px auto 20px;
+    padding: 0 20px;
+}
+
+/* 3. PROFILE CARD */
+.profile-card {
+    <div class="card-container"><div class="profile-card">>position: relative;
+    text-align: center;
+}
+
+/* 4. ABSOLUTE BADGE */
+.badge {
+    <div class="badge">PRO</div>
+}
+
+/* 5. PROFILE IMAGE */
+.profile-image {
+    <div class="profile-image"><img src="https://via.placeholder.com/150" alt="Profile Photo"></div>
+}
+
+.profile-image img {
+    /* Make it round (border-radius: 50%) */
+    /* Set width and height */
+    /* Add border */
+}
+
+/* 6. NAME AND TITLE */
+.name {
+    <h2 class="name">Somchai Panich</h2>
+}
+
+.title {
+    <p class="title">Senior Web Developer</p><p class="bio">Passionate about creating beautiful,
+    responsive web experiences.</p>< !-- Social Icons -->
+}
+
+/* 7. SOCIAL ICONS */
+.social-icons {
+    <div class="social-icons"><span class="icon">📱</span><span class="icon">🐦</span><span class="icon">💼</span><span class="icon">📧</span></div>margin: 20px 0;
+}
+
+.icon {
+    /* Display as inline-block */
+    /* Add padding and background */
+    /* Make them round */
+    font-size: 20px;
+}
+
+/* 8. STICKY FOLLOW BUTTON */
+.follow-btn {
+    <button class="follow-btn">Follow+</button></div>position: sticky;
+    bottom: 10px;
+
+    /* Add background color, text color, padding, border-radius */
+    /* Make it full width */
+}
+
+/* 9. STICKY SECTION HEADER */
+.section-header {
+    <div class="section-header"><h3>Recent Activity</h3></div>position: sticky;
+    top: 70px;
+    /* Below the fixed navbar */
+    /* Add z-index if needed */
+}
+
+/* 10. ADD SOME STYLING TO CONTENT */
+.content {
+    <div class="content"><p>Scroll to see sticky behavior...</p><div style="height: 300px;"></div><p>More content here...</p><div style="height: 300px;"></div><p>Keep scrolling !</p><div style="height: 300px;"></div><p>You've reached the end!</p>
+ </div>margin-top: 20px;
+}
