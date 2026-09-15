@@ -8,94 +8,147 @@ body {
     font-family: Arial, sans-serif;
     background: burlywood;
     min-height: 2000px;
-    /* For scrolling demonstration */
+    color: #2d1f18;
 }
 
-/* 1. FIXED NAVIGATION */
 .navbar {
-    <nav class="navbar"><span>My Portfolio</span><div class="nav-links"><a href="#">Home</a><a href="#">About</a><a href="#">Contact</a></div></nav>
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    background: rgba(255, 248, 240, 0.7);
+    border-bottom: 1px solid rgba(90, 60, 35, 0.2);
+    backdrop-filter: blur(6px);
 }
 
 .nav-links {
-    /* Use inline-block to display links horizontally */
+    display: flex;
+    gap: 16px;
 }
 
 .nav-links a {
-    /* Display as inline-block */
-    /* Add padding and text decoration */
+    display: inline-block;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: #3a2d26;
+    font-weight: 600;
 }
 
-/* 2. CARD CONTAINER */
 .card-container {
-    /* Center the container */
     max-width: 500px;
     margin: 80px auto 20px;
     padding: 0 20px;
 }
 
-/* 3. PROFILE CARD */
 .profile-card {
-    <div class="card-container"><div class="profile-card">>position: relative;
+    position: relative;
     text-align: center;
+    background: #fffaf5;
+    border-radius: 22px;
+    padding: 28px 22px 18px;
+    box-shadow: 0 12px 30px rgba(71, 44, 22, 0.18);
 }
 
-/* 4. ABSOLUTE BADGE */
 .badge {
-    <div class="badge">PRO</div>
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    padding: 8px 14px;
+    background: #8b5e3c;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
-/* 5. PROFILE IMAGE */
 .profile-image {
-    <div class="profile-image"><img src="https://via.placeholder.com/150" alt="Profile Photo"></div>
+    margin-bottom: 18px;
 }
 
 .profile-image img {
-    /* Make it round (border-radius: 50%) */
-    /* Set width and height */
-    /* Add border */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f0d5b2;
+    display: block;
+    margin: 0 auto;
 }
 
-/* 6. NAME AND TITLE */
 .name {
-    <h2 class="name">Somchai Panich</h2>
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: #2f1f17;
 }
 
 .title {
-    <p class="title">Senior Web Developer</p><p class="bio">Passionate about creating beautiful,
-    responsive web experiences.</p>< !-- Social Icons -->
+    margin-bottom: 12px;
+    font-weight: 700;
+    color: #7a4a2d;
 }
 
-/* 7. SOCIAL ICONS */
+.bio {
+    margin-bottom: 18px;
+    line-height: 1.6;
+    color: #5a4033;
+}
+
 .social-icons {
-    <div class="social-icons"><span class="icon">📱</span><span class="icon">🐦</span><span class="icon">💼</span><span class="icon">📧</span></div>margin: 20px 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
 }
 
 .icon {
-    /* Display as inline-block */
-    /* Add padding and background */
-    /* Make them round */
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    background: #f4e3cf;
     font-size: 20px;
 }
 
-/* 8. STICKY FOLLOW BUTTON */
 .follow-btn {
-    <button class="follow-btn">Follow+</button></div>position: sticky;
+    position: sticky;
     bottom: 10px;
-
-    /* Add background color, text color, padding, border-radius */
-    /* Make it full width */
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #6d4c41;
+    color: #fff;
+    padding: 14px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(72, 46, 33, 0.2);
 }
 
-/* 9. STICKY SECTION HEADER */
 .section-header {
-    <div class="section-header"><h3>Recent Activity</h3></div>position: sticky;
+    position: sticky;
     top: 70px;
-    /* Below the fixed navbar */
-    /* Add z-index if needed */
+    z-index: 5;
+    margin-top: 24px;
+    background: rgba(255, 248, 240, 0.8);
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(90, 60, 35, 0.15);
 }
 
-/* 10. ADD SOME STYLING TO CONTENT */
 .content {
-    <div class="content"><p>Scroll to see sticky behavior...</p><div style="height: 300px;"></div><p>More content here...</p><div style="height: 300px;"></div><p>Keep scrolling !</p><div style="height: 300px;"></div><p>You've reached the end!</p>
- </div>margin-top: 20px;
+    margin-top: 20px;
+    background: rgba(255, 248, 240, 0.5);
+    padding: 20px;
+    border-radius: 16px;
+    line-height: 1.8;
+    text-align: center;
 }
